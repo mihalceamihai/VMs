@@ -1,0 +1,356 @@
+/* Contine paginile
+-contact
+-listaremasini*/
+
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+.containernou{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  margin-bottom: 3px;
+}
+
+.page-title{
+  text-align:center;
+  color:#35424a;
+}
+
+.current a{
+
+  color:#e8491d;
+  font-weight:bold;
+}
+
+
+
+.button_1{ /*ala de subscribe*/
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+
+.buton_cautare{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+  border-radius: 10px;
+}
+
+/* Header **/
+
+header {
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header nav ul {
+	margin:0;
+	float:right;
+	padding:0;
+}
+
+header nav ul li {
+	float:left;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	list-style-type: none;
+	text-align:center;
+	font-size: 18px;
+
+}
+
+header nav ul li a {
+	color:white;
+	text-decoration:none;
+	display:block;
+}
+
+header nav ul li a:hover {
+	background-color:#e8491d;
+  color: #ffffff;
+}
+
+header nav ul li ul li {
+	display:none;
+}
+
+header nav ul li:hover ul li {
+	display:block;
+  background-color: #35424a;
+}
+
+header #logo{
+  float: left;
+  margin-top: -75px;
+  height:200px;
+  width:100px;
+}
+
+/*Showcase*/
+
+#showcase{
+  min-height: 400px;
+  background: url('../showcase/img2.png') no-repeat ;
+  text-align: center;
+  color: #e8491d;
+
+}
+
+
+
+#showcase h1{
+  margin-top: 0px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+#showcase p{
+  margin-top: -10px;
+}
+
+/*filtru*/
+#filters{
+  margin-top: -100px;
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+
+#filters h1{
+    padding: 0 10px 0 10px;
+    color: #e8491d; /*asta e orange*/
+}
+
+#filters form .filtru{
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    background-color:DodgerBlue;
+    border-radius: 10px;
+    border-color:  #e8491d;
+}
+
+
+
+
+.improvfooter {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom:  -40px;
+    width: 100%;
+    background-color:#e8491d ;
+    color: white;
+    text-align: center;
+}
+
+
+footer{
+  padding:10px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/*Newsletter*/
+#newsletter{
+  padding:10px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/*Main col*/
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/*Partea din stanga*/
+ul#contactleft li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+/*Partea din dreapta*/
+aside#sidebar{
+  float:right;
+  width: 30%;
+  margin-top: 100px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+aside#sidebar .quote textarea{
+  height:50px;
+}
+
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:300px;
+  height: 200px;
+}
+
+
+/*---------DETALII PRODUS---------------------*/
+
+
+.imagsliding{
+  height: 50%;
+  width:100%;
+  margin: auto;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.containersliding{
+  width:60%;
+  margin:auto;
+  overflow:hidden;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorsliding {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevsliding,
+.nextsliding {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextsliding {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevsliding:hover,
+.nextsliding:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextsliding {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-containersliding {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowsliding:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columnsliding {
+  float: left;
+  width: 10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demosliding {
+  opacity: 0.6;
+}
+
+.active,
+.demosliding:hover {
+  opacity: 1;
+}
+
+article ul li {
+  list-style-type: none;
+}
